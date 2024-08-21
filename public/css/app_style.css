@@ -1,0 +1,484 @@
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    --font-family-sans-serif: "Nunito", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.topo {
+    position: relative;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px 0px 60px 0px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+}
+
+
+.logo {
+    width: 50px;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+.menu li {
+    font-size: 15px;
+    display: inline;
+    float: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 14px 16px;
+    font-family: roboto;
+    color: #042d62;
+}
+
+.menu a:hover {
+    color: #6c757d;
+}
+
+.conteudo-pagina {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.titulo-pagina {
+    color: #042d62;
+    background-color: #82afd446;
+    padding: 40px 0px 60px 0px;
+    text-align: center;
+}
+
+.titulo-pagina h1 {
+    margin-top: 2%;
+}
+
+.fundo-azul {
+    float: inline-start;
+    background: linear-gradient(135deg, #0a4663, #042d62, #153579);
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-claro {
+    float: inline-start;
+    background: linear-gradient(135deg, #fff, #f8f7f7);
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-azul form, .fundo-claro form {
+    position: relative;
+    max-width: 450px;
+    margin: auto;
+    top: 8vh;
+    background-color: #fff;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.titulo-form {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    color: #153579;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.fundo-azul input, .fundo-claro input, select , select{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fundo-claro .card {
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.fundo-claro button {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.custom-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+
+.custom-input.is-invalid {
+    border-color: red;
+}
+
+.custom-invalid-feedback {
+    color: red;
+    font-size: 0.975em;
+}
+
+.error-icon {
+    transform: translateY(90%); 
+    right: 50px; 
+    color: red;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.336);
+  }
+
+  th {
+    height: 40px;
+    background: #042d62;
+    color: #f1f1f1;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    
+  }
+  
+  tr:nth-child(even) {
+    background-color: #82afd446;
+    }
+    
+    tr:hover:nth-child(1n + 2) {
+    background-color: #154c79c9;
+    color: #fff;
+    }
+  
+  tr:hover {
+    background-color: #154c79c9;
+    color: #fff;
+  }
+
+.rodape {
+    width: 100%;
+}
+
+.redes-sociais, .area-contato, .localizacao {
+    width: 33.333%;
+    border-top:solid 1px #ccc;
+    float: left;
+    text-align: center;
+    background-color: #f8f8f8;
+    height: 180px;
+}
+
+.redes-sociais, .area-contato, .localizacao p, span {
+    color: #333333;
+    font-size: 20px;
+}
+
+.redes-sociais img {
+    margin: 5px 15px 0px 15px;
+}
+
+.localizacao iframe {
+    width: 200px;
+    height: 90px;
+}
+
+.area-contato h2 {
+    margin-bottom: 35px;
+}
+
+.pagination li {
+    display: inline;
+    margin: 0 5px 0 5px;
+}
+
+.pagination li {
+    list-style-type: none;
+}
+
+.home-quadro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.home-quadro img {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    left: -35px;
+    top: -25px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.home-quadro a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-quadro a:hover {
+    color: #0a4663;
+}
+
+.home-quadro h2, h3 {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.home-quadro h2 {
+    font-family: system-ui;
+}
+
+.home-quadro p {
+    position: relative;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.centro, .direita, .esquerda {
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #F8B92F;
+    width: 25%;
+    height: 70%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.336);
+    
+}
+
+.titulo-app {
+    position: absolute;
+    top: 20vh;
+    left: 20%;
+    font-size: 7vh;
+    font-family: inter;
+    text-align: center;
+    color: #F8B92F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo-app b {
+    color: #042d62;
+}
+
+.cadastro-quadro {
+    position: relative;
+    top: 10%;
+    flex-direction: column;
+}
+
+.cadastro {
+    display: flex;
+    margin: -25px 0 50px 60px;
+    background-color: #F8B92F;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 10vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.336);
+}
+
+.cadastro-quadro a {
+    text-decoration: none;
+    color: #0a4663;
+}
+
+.cadastro h4 {
+    position: relative;
+    font-size: 1rem;
+}
+
+.cadastro h4:hover {
+    color: #f7f7f7;
+}
+
+.direita-design {
+    position: relative;
+    float: right;
+    width: 100vh;
+    height: 100vh;
+    background-color: #042d62;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0% 100%);
+    right: 0;
+}
+
+.midia {
+    position: absolute;
+    top: 25vh;
+    left: 55%;
+
+}
+
+.midia img {
+    width: 95%;
+}
+
+.paginacao {
+    text-align: center;
+}
+
+ .card .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+
+.custom-table th, .custom-table td {
+    border: 1px solid black;
+}
+
+.quadro-projeto {
+    position: relative;
+    width: 60%;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+}
+
+.texto-projeto p {
+    display: flex;
+    transform: translate(65%, -400%);
+    color: #042d62;
+}
+
+.custom-badge {
+    margin-left: 20px;
+    margin-top: 40px;
+    width:50px; 
+    font-size:30px;
+}
+
+.projeto-titulo {
+    display: flex;
+    transform: translate(20%, -120%);
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.esquerda-quadro-branco {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 10%;
+    padding-bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #042d62;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.subtitulo {
+    color: #F8B92F;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.paragrafo {
+    color: black;
+    width: 100%;
+}
+
+.titulo, .subtitulo, .paragrafo {
+    position: relative;   
+}
+
+.direita-quadro-azul {
+    background-color: #042d62;
+    width: 50%;
+    height: 60%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+}
+
+.carousel-inner {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img {
+    padding: 1%;
+    width: 670px;
+    height: 395px;
+}
+
+@media screen and (min-height: 768px) {
+
+    .carousel-inner {
+        align-items: center;
+        justify-content: center;
+        width: 950px;
+        height: 580px;
+    }
+
+    .carousel-item img {
+        padding: 1%;
+        width: 950px;
+        height: 580px;
+    }
+
+}
